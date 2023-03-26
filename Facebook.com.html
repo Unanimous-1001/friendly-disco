@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Full-screen Video</title>
+	<style>
+		body, html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			overflow: hidden;
+		}
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	</style>
+</head>
+<body>
+	<video id="myVideo" src="Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" autoplay muted controls playsinline></video>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var myVideo = document.getElementById('myVideo');
+			myVideo.muted = false;
+			myVideo.play();
+		});
+
+	document.addEventListener('DOMContentLoaded', function() {
+			var myVideo = document.getElementById('myVideo');
+			myVideo.muted = false;
+		});
+	</script>
+</body>
+</html>
